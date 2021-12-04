@@ -7,4 +7,5 @@ import math
 def read_file(file_name):
   with open(file_name) as f:
       lines = f.readlines()
+      lines = [j for j in lines if j != '\n']
   return lines
